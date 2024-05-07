@@ -25,7 +25,24 @@
         <p></p>
         <p></p>
         <p>To RSVP, click <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvDYcgvo3_nQ1QB9aM9ORGfjaJ4FGP2SXhbjuiiY-VpQuT-Q/viewform?usp=sf_link" target="display">here</a>.</p>
-        <p>Brasil &lsquo;66? Click <a href="https://music.apple.com/us/album/mais-que-nada/1440778404?i=1440778417" target="display">here</a>.</p>
+        <button id="btn">Brasil &lsquo;66</button>
+        <p></p>
+            <dialog id="music">
+                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/greatest-hits/1440778404"></iframe>
+                <button type="reset" id="cancelmusic">Close</button>
+            </dialog>
+            <script>
+                document.getElementById("btn").addEventListener("click",discreption1,false);
+                function discreption1() {
+                    dialog = document.getElementById("music");
+                    dialog.show();   
+                };
+                document.getElementById("cancelmusic").addEventListener("click",discreption2,false);
+                    function discreption2() {
+                        dialog = document.getElementById("music");
+                        dialog.close();   
+                };
+            </script>
     </div>
 </body>
 </html> 
